@@ -7,3 +7,5 @@ This is a simple example showcasing the excellent [beequeue](https://github.com/
 Run with `docker-compose up`.
 
 Experiment with different scale values: `docker-compose up --scale worker=2`.
+
+![Screenshot](screenshot.png)
