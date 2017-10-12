@@ -1,0 +1,17 @@
+{
+  "name": "node-beequeue-example-worker",
+  "version": "1.0.0",
+  "repository": "git@github.com:kimifoud/node-beequeue-example.git",
+  "description": "Example project showcasing beequeue",
+  "license": "MIT",
+  "author": "kimifoud",
+  "engines": {
+    "node": ">=8.4.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "bee-queue": "^1.1.0"
+  }
+}

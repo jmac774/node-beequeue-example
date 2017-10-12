@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  job-spawner:
+    build: job-spawner
+    depends_on:
+      - redis
+    command: ["yarn", "start"]
+
+  worker:
+    build: worker
+    depends_on:
+      - redis
+    command: ["yarn", "start"]
+
+  redis:
+    image: redis:4-alpine
