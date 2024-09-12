@@ -1,9 +1,10 @@
 const Queue = require("bee-queue");
+const redis = require('redis');
 
 const opts = {
-  redis: {
-    host: "redis"
-  }
+  getEvents: false,
+  isWorker: false,
+  redis: redis.createClient("redis://sarah.zidle@dhl.com:DhlShips1@rds-cst03-eu399.dhl.com:6380"),
 };
 const queue = new Queue("some-queue-identifier", opts);
 
